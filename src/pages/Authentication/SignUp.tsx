@@ -53,7 +53,7 @@ const Signup: React.FC = () => {
                 type="submit"
                 disabled={loading}
               >
-                {loading ? "Loading...." : "Sign In"}
+                {loading ? "Loading...." : "Sign Up"}
               </button>
               <div className="flex justify-between items-center text-sm text-gray-600">
                 <p>
@@ -64,7 +64,7 @@ const Signup: React.FC = () => {
               </div>
               <p className="py-8">
                 <span className="text-gray-600">Already have an account?</span>{" "}
-                <Link to="/login">Sign Up</Link>
+                <Link to="/login">Sign In</Link>
               </p>
             </form>
           </div>
