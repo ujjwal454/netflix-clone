@@ -8,4 +8,4 @@ Overall, this project aims to provide a user-friendly and visually appealing int
 
 In addition to using the TMDB API, Firebase, and React-query, this Netflix Clone project is hosted on Netlify. Netlify is a cloud-based platform that provides hosting, deployment, and other services for web applications.
 
-![alt text](https://freeimage.host/i/netflix-clone.HXGRscP)
+![alt text]([https://freeimage.host/i/netflix-clone.HXGRscP](https://iili.io/HXGRscP.png))
