@@ -64,7 +64,7 @@ const Signup: React.FC = () => {
               </div>
               <p className="py-8">
                 <span className="text-gray-600">Already have an account?</span>{" "}
-                <Link to="/login">Sign In</Link>
+                <Link to="/login">Sign Up</Link>
               </p>
             </form>
           </div>
