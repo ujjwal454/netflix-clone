@@ -3,6 +3,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useAuth } from "../../context/auth/AuthContext";
 import { db } from "../../firebase/firebase";
 import { updateDoc, arrayUnion, doc, getDoc, setDoc } from "firebase/firestore";
+import noImage from "../../assets/images/no-image.png";
 interface props {
   movie: any;
   savedMovies: any;
@@ -77,12 +78,16 @@ const Movie: React.FC<props> = ({ movie, savedMovies }) => {
   };
   return (
     <div className="w-[160px] sm:w-[200px]  md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
-      <img
-        src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
-        alt="posters"
-        loading="lazy"
-        className="block  object-cover"
-      />
+      {movie?.backdrop_path ? (
+        <img
+          src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
+          alt="posters"
+          loading="lazy"
+          className="block  object-cover"
+        />
+      ) : (
+        <img src={noImage} alt="/" className="w-full h-[150px]  block" />
+      )}
       <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
         <p
           className="text-xs md:text-sm absolute top-4 left-4"
