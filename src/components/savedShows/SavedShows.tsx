@@ -46,7 +46,7 @@ const SavedShows: React.FC<props> = () => {
     });
   };
   return (
-    <div className="container relative group">
+    <div className="relative group">
       {loading ? (
         <Loading />
       ) : (
