@@ -32,7 +32,7 @@ const Row: React.FC<props> = ({ endPoint, heading, rowId, savedShows }) => {
     }
   };
   return (
-    <div className="container relative group">
+    <div className="relative group">
       {fetchRowData.isLoading ? (
         <Loading />
       ) : (
